@@ -9,7 +9,7 @@ class Triangle
   def triangle_test
     if valid?
       if s1 == s2
-        s1 == s3 ? @kind = :equilateral : @kind = :isosceles
+        @kind = s1 == s3 ? :equilateral : :isosceles
       elsif s1 == s3 || s2 == s3
         @kind = :isosceles
       else @kind = :scalene
